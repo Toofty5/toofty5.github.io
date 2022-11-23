@@ -1,0 +1,32 @@
+---
+layout: post
+title: Hello!
+categories: blog
+---
+And we're back!  This is the latest leg in my wanderings between blog platforms.  
+
+I've been on-and-off blogging for a very long time on a number of platforms.  I started in college with Blogspot (now Blogger) with an auxiliary Xanga on the side.  Then I spent a bunch of time with a few long-form Facebook posts.  After that, I started [https://fickleframe.blogspot.com/](Fickle Frame), my photo blog of a few years.  And then came [2fivefive.xyz](2FiveFive), where I decided to learn a bunch of things to varying extents and build my entire platform up from bare metal.  
+
+2FiveFive has been sort of my playground to explore a bit of everything while keeping a paper trail of the stuff I've done to bring to interviews.  It started out as a plucky Apache/Wordpress setup on an undersized EC2 instance, and then it turned into a pile of React and GraphQL crammed into AWS Amplify. You can see the old blog [https://2fivefive.xyz/blog](here).
+
+Today it's on Github Pages powered by Jekyll.  This is only my first post, but I'm enjoying it so far.  It being in Markdown means I get to blog via Vim.  
+
+Anyway, the original purpose of this all was to get me a job and I fell off once I satisfied that.  Recently though, stuff started piling up again that needed getting out of my head, so the blogging itch is back.  I'm newly freed of some requirements and I've got some bags to unpack before I get into the real business.
+
+So here goes.
+
+When I was laid off I figured I'd have a few weeks to myself to regroup and recover from some burnout.  That was a lovely few weeks for me, doing some woodworking, teaching my son to ride a bike, and poking at my resume.  And then COVID happened, and the rest of that story goes about the way you'd expect.  As pressure to get a job came on, jobs started evaporating.
+
+You'd figure having all in the time in the world would be a breeze, but I pretty much lost my grip on everything.  Without a job to get to in the morning, I didn't know what to do with myself.  I learned and made things for my personal portfolio.  I got a few certifications.  I overhauled my resume.  That all were probably the right things to do, but without a job to show for it, it never felt like it mattered what I did; it all felt like a waste of time.
+
+It was in this period that I realized certain things about working (and not working for that matter).  I was always of the mind that I would never let my job define who I was, but I never realized just how many other things a job defines for you.
+
+For one, your job defines your schedule, or at least it delineates a chunk of time in the day that doesn't belong entirely to you.  With no concretely pressing matters, I found it surprisingly hard to figure out what to do with a whole 24 hours a day, especially when nothing felt like the right thing to do.  I had found the other extreme of the work/life balance, which meant I had no balance.  That opportunity to "switch gears" between work-mode and life-mode really helps you get away from one or the other for just a little bit.
+
+Work also gives you a set of people to interact with, for better or worse.  I thought I would dread interviews, but I started looking forward to them as opportunities to put on the "business casual" speak and just simply talking to people outside of my own head. When my wife came home I was always waiting to hear of all the stupid office drama of the day, just because my own life lacked the ups and downs of dealing with other human beings (immediate family excluded).
+
+Mostly, I have to admit it did give a certain sense of purpose -- not necessarily for my overall existence, but for my efforts to have an impact outside of my own bubble.  Sure there was my family and I did spend as much time as I could taking care of them, but ultimately they're just an extension of my own self and taking care of them just feels like taking care of myself.  I missed having that positive impact on others' lives, and showing up and saying "I'm here to help."
+
+But now there's helping to do again!  I've taken on an awesome role with an awesome team.  Just this week my first paycheck in almost 3 years dropped into my bank account, and 3 years of uncertainty dropped off my shoulders.
+
+Let's go!
