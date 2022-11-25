@@ -7,7 +7,7 @@ And we're back!  This is the latest leg in my wanderings between blog platforms.
 
 I've been on-and-off blogging for a very long time on a number of platforms.  I started in college with Blogspot (now Blogger) with an auxiliary Xanga on the side.  Then I spent a bunch of time with a few long-form Facebook posts.  After that, I started [Fickle Frame](https://fickleframe.blogspot.com/), my photo blog of a few years.  And then came [2FiveFive](2fivefive.xyz), where I decided to learn a bunch of things to varying extents and build my entire platform up from bare metal.  
 
-2FiveFive has been sort of my playground to explore a bit of everything while keeping a paper trail of the stuff I've done to bring to interviews.  It started out as a plucky Apache/Wordpress setup on an undersized EC2 instance, and then it turned into a pile of React and GraphQL crammed into AWS Amplify. You can see the old blog [here](https://2fivefive.xyz/blog).
+2FiveFive has been sort of my playground to explore a bit of everything while keeping a paper trail of the stuff I've done to bring to interviews.  It started out as a plucky Apache/Wordpress setup on an undersized EC2 instance, and then it turned into a pile of React and GraphQL crammed into AWS Amplify. You can see the old blog [here](https://main.d9jvqhx9di90m.amplifyapp.com/).
 
 Today it's on Github Pages powered by Jekyll.  This is only my first post, but I'm enjoying it so far.  It being in Markdown means I get to blog via Vim.  
 
