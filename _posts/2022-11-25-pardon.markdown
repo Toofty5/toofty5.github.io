@@ -1,6 +1,6 @@
 ---
 layout: post
-title=Pardon the dust...
+title: Pardon the dust...
 categories: blog
 ---
 
