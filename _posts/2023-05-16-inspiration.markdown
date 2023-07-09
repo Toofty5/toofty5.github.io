@@ -4,7 +4,7 @@ title: Inspiration
 categories: blog
 ---
 
-I have come to acknowledge that I am a bit of a creative by nature.
+I am a bit of a creative by nature.
 
 This is by no means saying that I am necessarily good at creating things, or even prone to it.  What I mean is that things feel right when I make things, whether they be photography, writing, woodworking, or code. Recently, I've done very little of that, falling into my more consumptive hobbies like movies and video games, and everything feels wrong.
 
@@ -14,6 +14,6 @@ The problem is, the wave of relief brought a wave of complacency.  I like my job
 
 I had a bit of a spark today though.  My son was out in the front yard while I was cleaning up, and he asked me for my mallet so that he could smash some acorns he had found.  Instead of handing him mine, I pulled out the lathe and spent half an hour turning a kid-size one for him.
 
-[mallet](/assets/mallet.jpg)
+![mallet](/assets/mallet.jpg)
 
 It's not quite the right shape and I didn't bother finishing the ends, but he was very happy with it and got to smashing, and I had forgotten how good it feels to have your work appreciated.
