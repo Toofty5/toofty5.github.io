@@ -1,0 +1,15 @@
+---
+layout: post
+title: Devlog - Pit Crew part 1
+categories: blog
+---
+
+So I've picked up coding again.  This time, I'm hoping to make a game for the Playdate from title to credits.  You always hear that game programming is extremely difficult, but I always figured it was because the problems that come up were advanced in nature.
+
+<video autoplay loop muted playsinline>
+    <source src="/assets/pitcrew-1.webm" type="video/webm">
+</video>
+
+I mean, they are, but on top of that they're also diverse, annoying, and many.  If I'm to do this all on my own, I'm going to need to wrap my mind around aysnchonrous programming and all its moving parts.  Not to mention, I'll need to figure out my own art, sfx, and music.
+
+
