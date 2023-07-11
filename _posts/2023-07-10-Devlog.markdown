@@ -1,0 +1,10 @@
+---
+layout: post
+title: Devlog - Pit Crew Part 2
+categories: blog
+---
+
+
+There, I did it.  I drew the rest of the car.
+
+![F1 Car](/assets/f1_car.png)
