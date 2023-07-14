@@ -1,0 +1,13 @@
+---
+layout: post
+title: Devlog - Pit Crew Part 3
+categories: blog
+---
+
+<video autoplay loop muted playsinline>
+    <source src="/assets/pitcrew-2.webm" type="video/webm">
+</video>
+
+Getting to this point has been a bit of a pain in the ass of my own making.  Till now I had been tracking the front wheel as the main object of interaction for the game, but now that I need to add the rest of the car, it raises a lot of annoying questions.  Does the car belong to the wheel, or does the wheel belong to the car?  Should I only need to update one object and have it propagate down, or just update everything directly from the main loop?
+
+Currently I'm stuck with a mix of both.  The wheel is still the main object, and the rest of the car is just a giant sprite that gets dragged along with it whenever it moves.  It works alright for now but I'm going to need to reckon with this when it comes time to add the animation to jack the car up and down.
