@@ -1,0 +1,13 @@
+---
+layout: post
+title: Devlog - Pit Crew part 5
+categories: blog
+---
+
+It's kind of annoying when you need to rewrite your code, and in the end your program just looks the same (hopefully) for all the work you did.
+
+At least I got to try making a git branch.  Not many excuses to do so at this scale.
+
+![git pull](/assets/git_pull.png)
+
+I swear, one of these days I'll figure out what any of this means.
