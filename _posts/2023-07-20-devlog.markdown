@@ -1,0 +1,17 @@
+---
+layout: post
+title: Devlog - Pit Crew part 5
+categories: blog
+---
+
+![wc](/assets/wc_l.png)
+
+This program is starting to get pretty big.
+
+I have learned that the thing about sprites is that you need to clean them up yourself.  I've gotten to a point where sideloading it into the physical Playdate is no longer a waste of time.  The game actually feels pretty good to play but I noticed that after a while things got slower and slower.  This was not a problem on the simulator because the simulator runs at your computer's clock speed while the Playdate is much less powerful.  Each car consisted of around 7 to 19 individual sprites (the car, two wheels, and the nuts on each wheel), and each time another car came in, the old one was still there off frame.
+
+That was where I discovered that merely removing references to sprites was not enough to mark them for garbage collection.  Internally, the Playdate was still tracking them off frame.  You need to manually call `sprite:remove()` on them to remove them from the draw list.
+
+This was a fun problem because my custom sprite objects had child sprites that also needed removing, so I had to override each object's `remove()` function to cascade the removal all the way down to the nuts.
+
+So now it's running nice and smooth across both platforms.  Next up, I need to figure out how text works so I can display a timer.
