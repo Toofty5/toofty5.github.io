@@ -1,0 +1,11 @@
+---
+layout: post
+title: Devlog - Pit Crew part 7
+categories: blog
+---
+
+<video autoplay loop muted playsinline>
+    <source src="/assets/suspension.webm" type="video/webm">
+</video>
+
+Now the cars have suspensions! Sort of.
