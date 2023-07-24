@@ -1,0 +1,21 @@
+---
+layout: post
+title: Devlog - Pit Crew part 8
+categories: blog
+---
+
+<video autoplay loop muted playsinline>
+    <source src="/assets/timer.webm" type="video/webm">
+</video>
+
+So I've finally gotten around to implementing a timer, which is sort of the point of this whole thing as the primary metric for scorekeeping.  I'd been holding off on doing it because so till now I hadn't had to do anything with dynamic text on the Playdate.
+
+You get `playdate.graphics.drawText()` and not a whole lot else.  If you just call that, you get this:
+
+<video autoplay loop muted playsinline>
+    <source src="/assets/timer_bad.webm" type="video/webm">
+</video>
+
+This happens because it's just spitting the pixels out on the screen.  What you need to do is clear them out for every frame and redraw it.  There's `playdate.graphics.clear()` but that clears the whole screen, which may include a good deal of pixels you don't want to have to redraw.
+
+This is the power of `graphics.pushContext()`.  It's weird how `push` and `context` together made no sense to me at first, but what is happening is that you're switching the context of every graphics command to, for example, your sprite.  All of the x's and y's become relative to the origin of the sprite, and also, importantly, `graphics.clear()`.  Now it only clears the bounding rectangle for the sprite you're working on.  When you're done working in this context, you call `popContext()` and carry on.
