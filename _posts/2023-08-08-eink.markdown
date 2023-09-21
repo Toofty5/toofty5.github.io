@@ -1,0 +1,18 @@
+---
+layout: post
+title: e-ink
+categories: blog
+---
+
+My Boox Tab Ultra C just arrived and I'm having a pretty good time with it already.
+
+I took advantage of the "back to school" deal that included the keyboard cover.
+
+Why not just use a laptop, you ask?  Now I can sit in the backyard in direct sunlight and the e-ink display only makes the text more visible.
+
+![e-ink](/assets/eink.jpg)
+
+It took some messing around to get set up the keyboard with a grave escape, but now that that's done I pretty much have my beloved 60% layout.  I'm using Termux to get me a *nix command line and from here I can SSH out to my stuff.
+
+Obviously the Playdate dev work won't be happening on this but so far writing this blog post in the backyard sun has been delightful and I am getting tons of sunlight.
+

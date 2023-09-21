@@ -6,5 +6,5 @@ FDATE=$(date "+%Y-%m-%d")
 FILENAME=$FDATE-$1.markdown
 
 echo -e "---\nlayout: post\ntitle: $1\ncategories: blog\n---" > $FILENAME
-
+git add filename
 
