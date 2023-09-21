@@ -1,0 +1,42 @@
+---
+layout: post
+title: Devlog - Pit Crew - Dither
+categories: blog
+---
+
+<video autoplay loop muted playsinline>
+    <source src="/assets/dither.webm" type="video/webm">
+</video>
+
+So I just went through another round of rewriting to make things work, which paved the way for some more aesthetic features.
+
+One was my "RaceText" class, which for now is just used to notify that a car is coming in.  At first I just had the text pop up on the screen, which was boring, and then I had it come in on an easing function, which was fine but I figured I might as well make things more annoying for myself.
+
+The RaceText class takes any string in its constructor, and assigns an animator to each character and has them come in one by one.  It's fun but the kerning is completely wack because I'm not using a monospace font.  One of these days maybe I'll just make my own.
+
+
+```
+class("Asphalt").extends(gfx.sprite)
+function Asphalt:init()
+  local asphalt_img = gfx.image.new(600,160)
+
+  gfx.pushContext(asphalt_img)
+    gfx.fillRect(0, 80, 600, 160)
+  gfx.popContext()
+
+  local asphalt_blurred = asphalt_img:blurredImage(20, 8, gfx.image.kDitherTypeBayer8x8)
+
+  Asphalt.super.init(self)
+  self:add()
+  self:setZIndex(-100)
+  self:setCenter(0,0)
+  self:moveTo(-100,100)
+  self:setImage(asphalt_blurred)
+end
+```
+
+The other fun thing was the ground graphic, which I decided I'd make programmatically rather than just sticking in a static image.  I'm not so sure the image would have been any easier since I'd have had to get into Gimp, make the thing, add to project, compile, play, hate it, delete it, repeat.  Doing it in code gives me a lot more control over the variables until I decide it looks right.
+
+I don't know of a more direct way of accessing the dithering functions in the SDK, so I just resorted to drawing a big black rectangle and then running it through the blur function, which allows you to specify which dither function you want to use.  Since all the graphic work is done once, right on initialization, so I don't need to worry about any performance hits.
+
+
