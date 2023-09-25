@@ -1,0 +1,19 @@
+---
+layout: post
+title: Arch Linux
+categories: blog
+---
+
+![Arch](/assets/arch.png)
+
+For whatever reason I decided to switch to Arch Linux on my primary laptop.  I had been using Manjaro somewhat happily for a while, and figured I could use a change.  Also, there was a weird week or two where my audio controls just randomly went haywire.  I'm not sure it had anything to do with Manjaro, but the _maybe_ was enough to get me to start thinking about other distributions.  Some similar impulse was how I ended up on Manjaro in the first place (previously Debian).
+
+I had bailed on an Arch installation before, but I figured, if I wiped my main laptop and went for it, I'd have no choice but to go all the way.  I figured, as long as I got into a GUI and a web browser, I could handle the rest as I realized I needed it.  What I didn't realize was that it would be another 3 hours of typing at the CLI before I finally figured everything out.
+
+It has you start from formatting your own boot partition.  Having spent some time repeatedly formatting and partitioning SD cards for my Rasperry Pi stack, I wasn't super worried about this.
+
+Things got annoying when I realized the network doesn't come set up out of the box, which is a problem because you need that to install stuff on an OS that comes with nothing installed.  So that's when I learned me some `iwctl`.  It's actually a pretty handy tool and I'm probably actually going to come back to it some day for a real-world scenario, but also takes an extra step to get it to handle DHCP.  Even now I don't fully understand Linux networking.  Every little function and layer is split up across config files and daemons all over the place.
+
+And then it came time to get the GUI going.  I think what I have here is the Plasma desktop environment, on top of an Xorg display server, using the SDDM display manager.  Something went wrong along the way and I found myself looking at the X windows without the Plasma layer on top, and wow that was pretty horrific.
+
+Anyway, I think I'm out the other side, almost to the point where I was in Manjaro.  Maybe need to tweak some themes a bit.  Jury's still out on this Gruvbox console theme.
