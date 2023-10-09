@@ -1,0 +1,19 @@
+---
+layout: post
+title: SSD
+categories: blog
+---
+
+Last week we stopped by at Microcenter and I picked up a 1TB Samsung SSD on sale.  The one in my Dell XPS13 was 256Gb.  I had only occupied about 40Gb of it becuase I had been storing most of my heavy stuff on a repurposed Macbook Pro in the closet with a few spinning hard drives plugged into it.  I should probably write a thing or two about that later.
+
+Anyway, I put it off installing it all week because I had a feeling I would run into problems, and indeed I did.
+
+First, I needed to boot into a temporary OS on a separate drive.  I decided on Debian on a live USB because, frankly, I kind of don't really know much about the differences between the distributions other than that Debian just works most of the time for what I need to do.  This would allow me to use `gparted` to resize the main partition down to the 40Gb that was actually in use.  Otherwise `dd` would copy all 256Gb in the partition, including the empty part (`gparted` is not included in the Debian live image so I had to `apt get` it).
+
+Next, since the laptop would only support one USB at a time, I would need to have yet another storage medium to offload the contents of the original SSD onto, perform the SSD swap, then load it back onto the new SSD.  Fortunately, the laptop has a MicroSD slot, and I had a 64Gb MicroSD card.  It would be as simple as: ` #dd if=/dev/nvme0n1 of=/dev/mmcblk0`.  I usually tack on `bs=4M status=progress` to save a little time and to watch the progress, becuase I hate when I hit enter and see nothing till it's done.  Anyway, I did that, put the new one in, and ran `dd` in reverse.  Then, I used `gparted` again to expand the partition out to the full 1Tb.  That went much faster than shrinking it down.
+
+Ideally, the only thing left to do was to boot into it and carry on.  Instead, I was rewarded with the BIOS telling me I had no bootable drives.
+
+Next followed about four hours of me trying just about everything, including starting the whole process over again just to end up in the same place.  I messed with GRUB a few times, reinstalled it a few times, reinstalled Arch a few times (did you know the `arch-install-scripts` is also in the Debian repos?  And so you can run `arch-chroot` and other stuff to mess around with an Arch installation.).  Everything took so long because it was a loop of: change a thing > reboot > see if it worked > didn't work > try another change.
+
+Anyway, ultimately I learned that the `uuid` is a property of partitions, and NOT a property of the drive.  Originally I thought it was sort of like a MAC address/serial number baked into the drive.  Instead there are ways to set it logically that I will not go into because I think the root of my problem was that, when I `dd`'ed my drive, it made a bit-for-bit clone to my SD card, which included the `uuid`s of the partitions on it, and then cloned it again to the new drive.  I hadn't removed the SD card when I booted up again, so when GRUB went to look for a partition to boot, it found two with identical UUIDs, which is the opposite of what you'd want from supposedly universally **unique** identifiers.
