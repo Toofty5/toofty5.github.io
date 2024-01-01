@@ -3,7 +3,7 @@ layout: post
 title: eGPU
 categories: blog
 ---
-![eGPU](/assets/eGPU.jpg)
+![eGPU](/assets/egpu.jpg)
 
 Well, I'm not sure what to make of this one.  I ended up getting an external GPU for my Dell XPS 9315 laptop.  Basically, it's a metal box with a power supply and a PCI-E slot that you put a standard graphics card into, and run a Thunderbolt cable to your laptop.  At first I just got the enclosure and tested it with an old NVidia GTX 1060 I had in the basement, and when that worked fine I went and got a 4070 during Black Friday.  I figured, I'm going to work my way to a gaming PC eventually, but I might as well do it in installments and reap some benefits until it's complete.
 
