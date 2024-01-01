@@ -1,0 +1,44 @@
+---
+layout: post
+title: eGPU
+categories: blog
+---
+![eGPU](/assets/eGPU.jpg)
+
+Well, I'm not sure what to make of this one.  I ended up getting an external GPU for my Dell XPS 9315 laptop.  Basically, it's a metal box with a power supply and a PCI-E slot that you put a standard graphics card into, and run a Thunderbolt cable to your laptop.  At first I just got the enclosure and tested it with an old NVidia GTX 1060 I had in the basement, and when that worked fine I went and got a 4070 during Black Friday.  I figured, I'm going to work my way to a gaming PC eventually, but I might as well do it in installments and reap some benefits until it's complete.
+
+Unfortunately, the 4070 is bottlenecked somewhere along the line and I'm getting inconsistent performance.  It *does* work though.  I'm getting into the 30s with Baldur's Gate 3 and 40s in Doom Eternal.  Control gets into the 30s but grinds when I turn on RTX.
+
+![Control (some post tweaks in Darktable)](/assets/control.jpg)
+
+There's also the added complication of this laptop running on Linux and Xorg being very unhappy when you hot-unplug GPUs.  If I unplug the GPU everything freezes and I need to do a hard reset.  I guess I don't blame it though.  The GPU is supposed to be bolted in and secured inside a case along with the rest of the computer, not off to the side with a single USB cable running over to where the CPU is.  Since Xorg likes to have its displays defined at the start, I need to keep a separate xorg.conf file that includes:
+
+```
+Section "Device"
+    Identifier     "Device0"
+    Driver         "nvidia"
+    VendorName     "NVIDIA Corporation"
+    BoardName      "NVIDIA GeForce RTX 4070"
+    Option         "AllowExternalGpus" "True"
+    Option         "AllowEmptyInitialConfiguration" "true"
+    BusID          "PCI:3:0:0"
+EndSection
+```
+...But xorg will not start if it looks for the 4070 and does not find it, so I need to delete it and restart if I want to undock my laptop.
+
+And so I have this:
+
+```bash
+#!/bin/bash
+echo "Changing xorg.conf"
+if [ ! -f /etc/X11/xorg.conf ]; then
+  echo "Nvidia config does not exist"
+  cp /etc/X11/xorg.conf.nvidia /etc/X11/xorg.conf && reboot
+else
+  mv /etc/X11/xorg.conf /etc/X11/xorg.conf.backup && reboot
+fi
+```
+There's probably a more elegant way with udev rules and stuff where I can just have it detect whether or not the eGPU is plugged in at boot, but I think that can be a next year problem.
+
+Happy New Year!
+
