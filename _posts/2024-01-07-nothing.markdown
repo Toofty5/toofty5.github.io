@@ -6,9 +6,7 @@ categories: blog
 
 Another span of time has elapsed between "TGIF" and "Well, I guess it's time to get ready for work tomorrow."
 
-I was a little bummed because it felt like I hadn't moved my life in any particular direction.  I don't feel closer to any destination.
-
-That's not to say that *nothing* happened, but let's just say it was a weekend about nothing.
+I was a little bummed because it felt like I hadn't moved my life in any particular direction.  That's not to say that *nothing* happened, but let's just say it was a weekend about nothing.
 
 ![Bread](/assets/bread.jpg)
 The supermarket was out of bread so I made some bread.  I finally got to use the batard banneton I got in Copenhagen over the summer.
@@ -26,4 +24,6 @@ This is actually great because I'd never really touched hardware virtualization 
 
 Till now it had been just another case of a how without a why.
 
+In any case, this is a great opportunity to remind myself of why my resolution for this year was to write more.  I've been feeling very adrift and directionless lately.  I go to bed on Sunday nights in a panic that I hadn't made good enough use of my weekend.  I worry because I don't feel any closer to anything for all the free time that had passed -- time that I alone am responsible for and could use to maximum effect if I so pleased, and in the end I feel like I've gone nowhere, when in fact I've gone everywhere and back.
 
+Writing is documenting, and I'm better with fact than fiction.  I need to write more just so that I can show myself that, actually, things are different than they were on Friday.
