@@ -27,9 +27,13 @@ url: "https://blog.2fivefive.xyz" # the base hostname & protocol for your site, 
 github_username:  Toofty5
 
 # Build settings
-theme: minima
+#theme: minima
+#
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+
+remote_theme: jekyll/minima
 minima:
   skin: dark
 
