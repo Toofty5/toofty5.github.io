@@ -1,0 +1,29 @@
+---
+layout: post
+title: nothing
+categories: blog
+---
+
+Another span of time has elapsed between "TGIF" and "Well, I guess it's time to get ready for work tomorrow."
+
+I was a little bummed because it felt like I hadn't moved my life in any particular direction.  I don't feel closer to any destination.
+
+That's not to say that *nothing* happened...
+
+![Bread](/assets/bread.jpg)
+The supermarket was out of bread so I made some bread.  I finally got to use the batard banneton I got in Copenhagen over the summer.
+
+![Corner](/assets/corner.jpg)
+I rebuilt this corner of this hunk of piano so that eventually I can make a bench out of it.  Now I need to do the other corner and it feels like this project hasn't even started yet in spite of the hours I've put in so far.
+
+![Cupcake](/assets/cupcake.jpg)
+We made some weird cupcakes.  I accidentally overfilled the pan for a few of these and they had these funny duckbill shapes on top and we decided that just made more surface area for frosting and sprinkles.
+
+![Chrono](/assets/chrono.jpg)
+I jumped into the retro console emulation scene.  It started as a hankering to play Metal Gear Acid again, and turned into learning how to use VirtualBox to spin up a VM just to run this Windows-only flash utility to shoehorn Chrono Trigger into this SNES Classic I bought on impulse a while back and never really touched afterwards.
+
+This is actually great because I'd never really touched hardware virtualization before for lack of necessity.  I totally skipped straight to Kubernetes and Docker, and kind of felt like I was floating around without a foundation for a while until now.  Now I have a true appreciation for not having to create an entire operating system in a bottle just to run a single stubborn program.
+
+Till now it had been just another case of a how without a why.
+
+
