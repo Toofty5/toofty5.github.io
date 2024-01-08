@@ -30,6 +30,8 @@ github_username:  Toofty5
 theme: minima
 plugins:
   - jekyll-feed
+minima:
+  skin: dark
 
 # Exclude from processing.
 # The following items will not be processed, by default.
