@@ -1,0 +1,9 @@
+---
+layout: post
+title: Learning 2
+categories: blog
+---
+
+![Learn](/assets/congrats_ml.jpg)
+
+Hello, I have come to collect my six figures, please.
