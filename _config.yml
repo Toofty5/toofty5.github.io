@@ -32,10 +32,12 @@ github_username:  Toofty5
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-paginate
 
 remote_theme: jekyll/minima
 minima:
   skin: dark
+paginate: 3
 
 # Exclude from processing.
 # The following items will not be processed, by default.
