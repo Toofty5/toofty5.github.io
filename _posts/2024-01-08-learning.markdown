@@ -1,0 +1,20 @@
+---
+layout: post
+title: Learning
+categories: blog
+---
+
+So I decided it's finally time to learn what machine learning is all about.  If my eGPU isn't going to be any good for games, I might as well put it to use for something, and here we are.
+
+I came across [Google's intro to ML stuff](https://developers.google.com/codelabs/tensorflow-2-computervision) and got started on that.  Turns out, according to the all you need are:
+- A solid knowledge of Python
+- Basic programming skils
+
+I'm not sure how you'd have the former without the latter, but I guess I consider myself close enough to both.  I always imagined the requirements being more along the lines of:
+- Access to a bunch of noisy hot things in a data center
+- *Strong* programming skills
+- A solid grasp of linear algebra, maybe some sort of degree.
+
+I have none of these, but at this point I've decided I usually have the most fun diving into something without any actual research, and hope to find out along the way.  
+
+It's already paying off because I've finally installed and used Conda for the first time.  At first I installed Anaconda, and learned that Anaconda is a whole suite of stuff I probably won't be using any time soon, so I removed it and installed Miniconda instead.  So far, as a single user with a very small development footprint, it hasn't proven to be any different from my usual Python usage, except it's `conda install` instead of `pip install`.
