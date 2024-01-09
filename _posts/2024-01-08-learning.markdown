@@ -6,7 +6,7 @@ categories: blog
 
 So I decided it's finally time to learn what machine learning is all about.  If my eGPU isn't going to be any good for games, I might as well put it to use for something, and here we are.
 
-I came across [Google's intro to ML stuff](https://developers.google.com/codelabs/tensorflow-2-computervision) and got started on that.  Turns out, according to the all you need are:
+I came across [Google's intro to ML stuff](https://developers.google.com/codelabs/tensorflow-2-computervision) and got started on that.  Turns out, according to Google all you need are:
 - A solid knowledge of Python
 - Basic programming skils
 
