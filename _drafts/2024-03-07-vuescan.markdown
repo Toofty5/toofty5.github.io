@@ -1,0 +1,16 @@
+---
+layout: post
+title: Vuescan
+categories: blog
+---
+
+So I'm making another attempt to spin my photography hobby back up again.  We went to Miami last year for the Formula 1 race, and I took the Horizon Perfekt with me.  Our seats were at a wide sweeping medium-speed turn, and I figured the panoramic lens would help capture it.  I loaded it up with some Provia 100 I've been keeping in the freezer for years.
+
+I had originally gotten lab scans, but the sharpening was just bad...
+
+Which meant I had to dust off my old PrimeFilm 7200 scanner.  The Windows PC has since moved to the living room to be used as a glorified game console, so I figured I'd see if there were any Linux drivers for it.  I didn't have high hopes but the first thing I saw was this:
+
+
+I was absolutely floored.  Not only have they been keeping their software updated in the years I've spent away from film photography, but they've been reverse engineering drivers and adding them to their program.  There was some working around to get my setup working, but that was nicely documented as well.  Also, my license code from 2012 still works!
+
+Now, the only problem is, now that I have the capacity to process photos once again, I need to get to *taking* photos again.
